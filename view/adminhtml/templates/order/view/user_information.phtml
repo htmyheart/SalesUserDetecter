@@ -1,0 +1,11 @@
+<?php $data = $block->getAdminUserData(); ?>
+<?php if ($data && !empty($data)) : ?>
+    <table class="admin__table-secondary order-account-information-table">
+        <tbody>
+            <tr>
+                <th><?php echo $block->escapeHtml(__('Created by Username: ')); ?></th> <td> <?php echo $block->escapeHtml($data['user_name']) ?></td>
+            </tr>
+        </tbody>
+    </table>
+<?php endif; ?>
+
